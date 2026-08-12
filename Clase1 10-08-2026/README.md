@@ -1,1 +1,6 @@
-
+tarea de lectura, apuntes: ¿Tienen política los artefactos?
+los objetos en si no poseen una política pero el ser humano los moldea para favorecer sus ideologías.
+los planes técnicos que preceden al uso del instrumento. Deliberadamente el humano planea como usar los medios ya sea para el bien o el mal de una comunidad entera. el diseño sigue a la función de su creador.
+hoy en día se ven a los objetos tecnológicos como artefactos neutros usados para el bien o el mal, sin embargo debemos tener en cuenta que algunos objetos fueron deliberadamente diseñados para producir consecuencias fuera de su uso habitual, como los puentes de Robert Moses.
+"Lo que nosotros llamamos "tecnologías" son los modos de ordenar nuestro mundo. Muchas invenciones y sistemas técnicos importantes en nuestra vida cotidiana conllevan la posibilidad de ordenar la actividad humana de diversas maneras." - cita del texto.
+ciertas tecnologías si son esencialmente políticas. Es decir que ciertos artefactos no necesitan de ciertas condiciones para funcionar, como una planta nuclear que necesita a sus científicos o un barco que necesita un capitán y tripulación estos artefactos en si son políticos debido a que necesitan de un ser político que este capacitado para usarlo. 
