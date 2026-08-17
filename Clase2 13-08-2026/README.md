@@ -1,3 +1,4 @@
+
 De la observación a la formulación del problema 🍰
 -
 
@@ -5,13 +6,13 @@ De la observación a la formulación del problema 🍰
 
 ⭐Problema: la palabra/frase puntual que parte del concepto tratado
 
-observar para identificar a la problemática y llegar al problema.
+observar para identificar la problemática y llegar al problema.
 
-❎diseñar soluciones antes de comprender el problema. una interfaz puede ser atractiva pero aun así no resuelve la dificultad real.
+❎diseñar soluciones antes de comprender el problema. Una interfaz puede ser atractiva pero aun así no resuelve la dificultad real.
 
 🟦muy importante leer para poder plasmar las ideas de manera adecuada.
 
-Descripción-Fundamentación-Implementación-Objetivo(general/especifico)
+Descripción-Fundamentación-Implementación-Objetivo(general/específico)
 
 🌟Ámbitos de investigación proyectual
 -
