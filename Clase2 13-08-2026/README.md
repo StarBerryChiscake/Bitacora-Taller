@@ -42,11 +42,10 @@ NFC: Near Field Comunication
 <img width="1920" height="1080" alt="Corral_Ortega_mapa conceptual " src="https://github.com/user-attachments/assets/99dc403b-6cd9-432b-95dc-48827b5c5949" />
 
 
-
 Mini guión para explicar nuestro proceso:
 -
 
-Nuestro tópico principal en común fue la música. pero que es técnicamente la mucisa, sonido. El sonido puede  manifestarse de maneras completamente diferentes para cada persona. En nuestro caso, el sonido es una experiencia o un estruendo algo que te mueve y te eriza la piel. Esto también nos llevó a hablar sobre la plática, molestia, un grito. Pero luego empezamos a pensar en el sonido como una ilusión. Al ser una onda imperceptible al ojo humano es difícil de palpar y tener la certeza de que es algo verdadero. Una alucinación, algo imperceptible. Nosotras decidimos hacer un artefacto que evidencia este fenómeno tan común que es el sonido. Ya qué, si yo estoy dudando de lo que escucho me gusta tener algún tipo de recordatorio de que no me estoy volviendo loca y que de verdad el mundo se encuentra lleno de sonidos, malos o buenos. Y formulamos nuestra pregunta final para terminar nuestro mapa lleno  de delirio e incertidumbre.
+Nuestro tópico principal en común fue la música, pero que es técnicamente la música, sonido. El sonido puede  manifestarse de maneras completamente diferentes para cada persona. En nuestro caso, el sonido es una experiencia o un estruendo algo que te mueve y te eriza la piel. Esto también nos llevó a hablar sobre la plática, molestia, un grito. Pero luego empezamos a pensar en el sonido como una ilusión. Al ser una onda imperceptible al ojo humano es difícil de palpar y tener la certeza de que es algo verdadero. Una alucinación, algo imperceptible. Nosotras decidimos hacer un artefacto que evidencia este fenómeno tan común que es el sonido. Ya qué, si yo estoy dudando de lo que escucho me gusta tener algún tipo de recordatorio de que no me estoy volviendo loca y que de verdad el mundo se encuentra lleno de sonidos, malos o buenos. Y formulamos nuestra pregunta final para terminar nuestro mapa lleno  de delirio e incertidumbre.
 
 🟪Registro de proceso:
 -
