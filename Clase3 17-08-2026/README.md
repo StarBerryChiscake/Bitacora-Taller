@@ -26,6 +26,13 @@ para la presentación de nuestro artefacto usar de referente a Zimoun (modular, 
 
 fenómeno físico ≠ experiencia perceptual 
 
+nuestras experiencias etiquetan el mundo (rojo, frio, lejos, bonito, feo, etc.)
+
+-sentir antes de censar 
+BOMB: bill of materials 
+
+
+
 
 
 
