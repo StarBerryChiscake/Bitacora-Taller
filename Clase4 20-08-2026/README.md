@@ -1,1 +1,8 @@
+"Weapons of math destruction" by Cathy O'Neil 
+-
 
+"Como el punto ciego de un modelo expone las prioridades y el juicio de su creador"
+- 
+
+
+en el texto se nos demuestra esta frase que nos expresa una de las fallas de los modelos a base de datos. estos modelos son determinados funcionales o no dependiendo de su propósito el cual puede estar modelando una acción compleja o simple. esto es solo una especie de representación numérica de lo que priorizamos como individuos al crear estos modelos. queremos mejorar para nosotros o para los demás, si yo odio uno de los datos de mi modelo puedo omitirlo si yo deseo lo cual puede hacer al modelo prejuicioso de manera no intencional. en el texto se nos expresa este fallo como consecuencia humana del prejuicio con el ejemplo de los sistemas tribunales que discriminan a los acusados dependiendo del color de su piel. este tópico en particular me parece interesante debido a que me interesa psicoanalizar personas en micro dosis para no volverme loca yo con la discapacidad empática que el humano puede llegar a poseer y también me alientan al reconocer la carencia de estas características en mi persona; bueno aun soy poco empática en ciertas situaciones, pero por lo menos tengo datos almacenados en mi cerebro que apoyan mi pensar o lo actualiza según la situación. los modelo que el humano crea durante toda su historia están defectuosos por una razón o la otra pero la diferencia entre un buen modelo y uno malo a mi parecer es la actualización y alimentación de su data, mientras mas actualizado y mas data se introduzca al modelo este puede funcionar mejor que los modelos arcaicos que nadie se molesta en cambiar ni siquiera un poco.  
