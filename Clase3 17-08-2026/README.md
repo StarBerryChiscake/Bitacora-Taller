@@ -29,7 +29,18 @@ fenómeno físico ≠ experiencia perceptual
 nuestras experiencias etiquetan el mundo (rojo, frio, lejos, bonito, feo, etc.)
 
 -sentir antes de censar 
-BOMB: bill of materials 
+BOM: bill of materials 
+
+
+💙 Apuntes de clase
+-
+
+nuestras experiencias etiquetan el mundo (nuestros sentidos determinan lo que podemos conocer y denominar) 
+ej: rojo, frio, cerca, lejos, etc.
+
+fenómeno: algo que ocurre en el mundo 
+percepción: capacidad de un organismo de 
+
 
 
 
