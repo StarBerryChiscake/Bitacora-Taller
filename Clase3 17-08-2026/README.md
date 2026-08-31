@@ -29,7 +29,7 @@ fenómeno físico ≠ experiencia perceptual
 nuestras experiencias etiquetan el mundo (rojo, frio, lejos, bonito, feo, etc.)
 
 -sentir antes de censar 
-BOM: bill of materials 
+BOM: bill of materials (listado de materiales con precio incluido)
 
 
 💙 Apuntes de clase
@@ -38,8 +38,15 @@ BOM: bill of materials
 nuestras experiencias etiquetan el mundo (nuestros sentidos determinan lo que podemos conocer y denominar) 
 ej: rojo, frio, cerca, lejos, etc.
 
-fenómeno: algo que ocurre en el mundo 
-percepción: capacidad de un organismo de 
+* Fenómeno: algo que ocurre en el mundo
+* Percepción: capacidad de un organismo para relacionarse con el mundo
+* Representación: formas de describir ese algo
+* Interpretación: le atribuimos significado
+
+- Lo que experimentamos esta restringido por lo que el cuerpo puede hacer
+- La semiótica: significado, significante, signo, icono, índice, símbolo 
+- El diseñar es poder (manipulación de comportamiento)
+- No diseñamos solo objetos que perciben la realidad, diseñamos sistemas que seleccionan fenómenos que se traducen en datos y actúan a partir de una interpretación operacional de ellos 
 
 
 
