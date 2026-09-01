@@ -17,7 +17,9 @@ imagenes y documentación del proceso:
 <img width="896" height="1195" alt="Gemini_Generated_Image_n03iazn03iazn03i" src="https://github.com/user-attachments/assets/def46acc-b689-49bb-bce0-f71e7e7627e9" />
 *iteraciones del proyecto final con I.A.
 
-<img width="665" height="932" alt="image" src="https://github.com/user-attachments/assets/54fbafc6-9e81-4a33-840d-27597acc0387" />
+<img width="793" height="1121" alt="Copia de plantilla-encargo-05" src="https://github.com/user-attachments/assets/0615155e-8498-41f1-a48e-6ee1af2c1c2e" />
+
+
 *lamina final del proyecto 
 
 
