@@ -90,7 +90,7 @@ controlan un LED en el GPIO 23 con digitalWrite y redirigen a "/". Imprime la IP
 Monitor serie a 115200 baudios. No uses delay() dentro de loop(). Comenta cada
 bloque en español. (ejemplo dado por el profe). 
 
-Resultado: (Sin modificar)
+Resultado: (Decidimos rendirnos y escribir a mano el codigo ya que es mas dificil revisar que esta mal con  este codigo de ia 😢)
 -
 ```
 // Ejercicio 3: LED controlado desde un a pagina web
@@ -103,9 +103,9 @@ Resultado: (Sin modificar)
 const int PIN_LED = 23;
 
 // Configuración del Servidor Web en el puerto 80
-WebServer server(80); ***ERROR*** 
+WebServer server(80); 
 
-// Configuración de las credenciales del Access Point (AP)
+// Configuración de las credenciales del Access Point (AP) 
 const char* ap_ssid = "ESP32-Grupo01";
 const char* ap_password = "diseno2026";
 
@@ -209,122 +209,93 @@ void loop() {
 }
 ```
 
-
-Resultado: (Modificado)
+CODIGO DE REFERENCIA (entregado por el profe) (escrito a mano para practicar) 
 -
 ```
-// Ejercicio 3: LED controlado desde un a pagina web
-// La ESP crea su propia red wifi y sirve una pagina con dos botones.
+//Ejercicio 3: LED controlado desde página web
+//La ESP32 crea su propia red wifi y sirve una páguina con 2 botones
 
-#include <WiFi.h> //Funciones de wifi 
-#include <WebServer.h> // Servidor Web simple 
+#include <WiFi.h> // funciones de wifi
+#include <WebServer.h> // servidor de web simple
 
-// Definición del pin del LED
+// CONFIGURACIÓN
+const char* NOMBRE_RED = "ESP32-Javiera";  // Cambia por el nombre de tu
+grupo (sin ñ ni tildes)
+const char* CLAVE_RED = "";  // Mínimo 8 caracteres
 const int PIN_LED = 23;
 
-// Configuración del Servidor Web en el puerto 80
-WebServer server(80); ***ERROR*** 
+WebServer servidor(80); // Servidor en el puerto 80 (HTTP)
 
-// Configuración de las credenciales del Access Point (AP)
-const char* ap_ssid = "ESP32-Grupo01";
-const char* ap_password = "diseno2026";
-
-// Función para generar la página HTML adaptada a dispositivos móviles
-String generarPaginaHTML() {
-  // Leemos el estado actual del LED (HIGH o LOW)
-  bool estadoLED = digitalRead(PIN_LED);
-
-  String html = "<!DOCTYPE html><html lang='es'><head>";
-  html += "<meta charset='UTF-8'>";
-  // Meta tag viewport para adaptabilidad a pantalla de celulares
-  html += "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
-  html += "<title>Control ESP32</title>";
-  
-  // Estilos CSS integrados para una interfaz móvil limpia e intuitiva
-  html += "<style>";
-  html += "body { font-family: Arial, sans-serif; text-align: center; background-color: #f4f4f9; margin: 0; padding: 20px; }";
-  html += ".card { background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }";
-  html += "h1 { color: #333; font-size: 24px; margin-bottom: 20px; }";
-  html += ".state { font-size: 18px; font-weight: bold; margin-bottom: 25px; }";
-  html += ".on { color: #28a745; } .off { color: #dc3545; }";
-  html += ".btn { display: block; width: 100%; padding: 15px 0; margin: 10px 0; font-size: 18px; color: white; border: none; border-radius: 8px; text-decoration: none; cursor: pointer; transition: 0.2s; }";
-  html += ".btn-on { background-color: #28a745; } .btn-on:active { background-color: #218838; }";
-  html += ".btn-off { background-color: #dc3545; } .btn-off:active { background-color: #c82333; }";
-  html += "</style></head><body>";
-
-  html += "<div class='card'>";
-  html += "<h1>Control de LED</h1>";
-  
-  // Muestra el estado del LED dinámicamente
-  if (estadoLED) {
-    html += "<p class='state'>Estado del LED: <span class='on'>ENCENDIDO</span></p>";
-  } else {
-    html += "<p class='state'>Estado del LED: <span class='off'>APAGADO</span></p>";
-  }
-
-  // Botones de control que envían solicitudes GET
-  html += "<a href='/encender' class='btn btn-on'>Encender</a>";
-  html += "<a href='/apagar' class='btn btn-off'>Apagar</a>";
-  html += "</div>";
-
-  html += "</body></html>";
-  return html;
-}
-
-// Manejador para la ruta principal "/"
-void handleRoot() {
-  server.send(200, "text/html", generarPaginaHTML());
-}
-
-// Manejador para encender el LED en la ruta "/encender"
-void handleEncender() {
-  digitalWrite(PIN_LED, HIGH);
-  // Redirección HTTP 303 a la raíz
-  server.sendHeader("Location", "/");
-  server.send(303);
-}
-
-// Manejador para apagar el LED en la ruta "/apagar"
-void handleApagar() {
-  digitalWrite(PIN_LED, LOW);
-  // Redirección HTTP 303 a la raíz
-  server.sendHeader("Location", "/");
-  server.send(303);
-}
-
-void setup() {
-  // Inicialización del Puerto Serie a 115200 baudios
-  Serial.begin(115200);
-  delay(100);
-
-  // Configuración del GPIO 23 como salida
-  pinMode(PIN_LED, OUTPUT);
-  digitalWrite(PIN_LED, LOW); // Estado inicial: Apagado
-
-  // Configuración e inicio del punto de acceso (Access Point)
-  Serial.println("\nIniciando punto de acceso Wi-Fi...");
-  WiFi.mode(WIFI_AP);
-  WiFi.softAP(ap_ssid, ap_password);
-
-  // Impresión de la dirección IP asignada al AP
-  IPAddress myIP = WiFi.softAPIP();
-  Serial.print("Red AP iniciada. Conéctate a la SSID: ");
-  Serial.println(ap_ssid);
-  Serial.print("Dirección IP del servidor web: ");
-  Serial.println(myIP);
-
-  // Asignación de rutas al Servidor Web
-  server.on("/", handleRoot);
-  server.on("/encender", handleEncender);
-  server.on("/apagar", handleApagar);
-
-  // Inicio del servidor web
-  server.begin();
-  Serial.println("Servidor HTTP iniciado correctamente.");
-}
-
-void loop() {
-  // Atiende las peticiones entrantes de los clientes web de forma no bloqueante (sin delay)
-  server.handleClient();
-}
 ``` 
+
+// ---- Configuración ----
+
+WebServer servidor(80); // Servidor en el puerto 80 (HTTP)
+bool ledEncendido = false; // Recuerda el estado actual del LED
+// Construye la página HTML según el estado del LED
+String crearPagina() {
+String estado = ledEncendido ? "ENCENDIDO" : "APAGADO";
+String html = "<!DOCTYPE html><html lang='es'><head>";
+html += "<meta charset='UTF-8'>";
+html += "<meta name='viewport' content='width=device-width, initialscale=1'>";
+html += "<title>Control LED ESP32</title>";
+html += "<style>";
+html += "body{font-family:sans-serif;textalign:center;padding:40px;background:#111;color:#eee;}";
+html += "a{display:block;margin:16px auto;padding:20px;width:200px;borderradius:12px;";
+html += "font-size:22px;text-decoration:none;color:#fff;}";
+html += ".on{background:#2e7d32;} .off{background:#c62828;}";
+html += "</style></head><body>";
+html += "<h1>LED ESP32</h1>";
+html += "<p>Estado: <strong>" + estado + "</strong></p>";
+html += "<a class='on' href='/encender'>Encender</a>";
+html += "<a class='off' href='/apagar'>Apagar</a>";
+html += "</body></html>";
+return html;
+}
+// Redirige el navegador de vuelta a la página principal
+void volverAlInicio() {
+servidor.sendHeader("Location", "/");
+servidor.send(303);
+Guía ESP32: Blink, Pulsador y LED por WiFi
+}
+// Ruta "/": muestra la página
+void paginaPrincipal() {
+servidor.send(200, "text/html", crearPagina());
+}
+// Ruta "/encender"
+void encenderLed() {
+ledEncendido = true;
+digitalWrite(PIN_LED, HIGH);
+volverAlInicio();
+}
+// Ruta "/apagar"
+void apagarLed() {
+ledEncendido = false;
+digitalWrite(PIN_LED, LOW);
+volverAlInicio();
+}
+void setup() {
+Serial.begin(115200);
+pinMode(PIN_LED, OUTPUT);
+digitalWrite(PIN_LED, LOW); // Partir con el LED apagado
+// Crear la red WiFi propia (modo Access Point)
+WiFi.softAP(NOMBRE_RED, CLAVE_RED);
+Serial.print("Red creada: ");
+Serial.println(NOMBRE_RED);
+Serial.print("Abre en el navegador: http://");
+Serial.println(WiFi.softAPIP()); // Normalmente 192.168.4.1
+// Asociar cada ruta con su función
+servidor.on("/", paginaPrincipal);
+servidor.on("/encender", encenderLed);
+servidor.on("/apagar", apagarLed);
+servidor.begin();
+}
+void loop() {
+servidor.handleClient(); // Atender pedidos del navegador. Sin delay().
+}
+
+Glosario 
+-
+HTTP : HTTP significa Protocolo de transferencia de hipertexto y es la forma en que diferentes partes de Internet se comunican entre sí. HTTP es lo que se conoce como un lenguaje de "solicitud-respuesta" porque el explorador web (Firefox, Safari, etc.).
+
+
