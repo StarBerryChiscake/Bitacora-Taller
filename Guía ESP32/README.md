@@ -221,42 +221,35 @@ CODIGO DE REFERENCIA (entregado por el profe) (escrito a mano para practicar)
 // CONFIGURACIÓN
 const char* NOMBRE_RED = "ESP32-Javiera";  // Cambia por el nombre de tu
 grupo (sin ñ ni tildes)
-const char* CLAVE_RED = "";  // Mínimo 8 caracteres
+const char* CLAVE_RED = "diseno2026";  // Mínimo 8 caracteres
 const int PIN_LED = 23;
 
 WebServer servidor(80); // Servidor en el puerto 80 (HTTP)
-
-``` 
-
-// ---- Configuración ----
-
-WebServer servidor(80); // Servidor en el puerto 80 (HTTP)
-bool ledEncendido = false; // Recuerda el estado actual del LED
-// Construye la página HTML según el estado del LED
+bool ledEncendido = false, // Recuerda el estado actual del LED
+//construye la página HTML según el estado del LED
 String crearPagina() {
 String estado = ledEncendido ? "ENCENDIDO" : "APAGADO";
-String html = "<!DOCTYPE html><html lang='es'><head>";
-html += "<meta charset='UTF-8'>";
-html += "<meta name='viewport' content='width=device-width, initialscale=1'>";
-html += "<title>Control LED ESP32</title>";
-html += "<style>";
-html += "body{font-family:sans-serif;textalign:center;padding:40px;background:#111;color:#eee;}";
-html += "a{display:block;margin:16px auto;padding:20px;width:200px;borderradius:12px;";
-html += "font-size:22px;text-decoration:none;color:#fff;}";
-html += ".on{background:#2e7d32;} .off{background:#c62828;}";
-html += "</style></head><body>";
-html += "<h1>LED ESP32</h1>";
-html += "<p>Estado: <strong>" + estado + "</strong></p>";
-html += "<a class='on' href='/encender'>Encender</a>";
-html += "<a class='off' href='/apagar'>Apagar</a>";
-html += "</body></html>";
-return html;
+String html = "<!DOCTYPE html><html lang= 'es'><head>"; // permite comenzar a construir dinámicamente el código HTML
+html += "<meta charset='UTF-8'>"; // interpreta y muestra correctamente caracteres especiales
+html += "<meta name='viewport' content='width=device-width, initial-scale=1'>"; // adaptabilidad de la página a la pantalla de celular 
+html += "<title>Control LED ESP32</title>"; // titulo de la pagina web
+html += "<style>"; //apertura de los estilos de fuente de la página en CSS
+html += "body{font-family:sans-serif;textalign:center;padding:40px;background:#111;color:#eee;}"; // características del texto
+html += "a{display:block;margin:16px auto;padding:20px;width:200px;borderradius:12px;"; // apariencia de los botones 
+html += "font-size:22px;text-decoration:none;color:#fff;}"; // apariencia texto de los botones 
+html += ".on{background:#2e7d32;} .off{background:#c62828;}"; // color de fondo de los botones 
+html += "</style></head><body>"; // cierre de CSS anterior, apertura de cuerpo principal en la página 
+html += "<h1>LED ESP32</h1>"; // título principal visible en la pantalla de la página web
+html += "<p>Estado: <strong>" + estado + "</strong></p>"; // estado actual del LED mostrado en la pantalla de la página 
+html += "<a class='on' href='/encender'>Encender</a>"; // crea el botón visible para encender el LED
+html += "<a class='off' href='/apagar'>Apagar</a>"; // crea el botón visible para apagar el LED 
+html += "</body></html>"; // cierre del cuerpo de la página y finalización del documento HTML completo
+return html; //devuelve la variable html construida con todo el código web para que el servidor de la ESP32 la envíe como respuesta al navegador
 }
 // Redirige el navegador de vuelta a la página principal
-void volverAlInicio() {
+voidVolverAlInicio(){
 servidor.sendHeader("Location", "/");
-servidor.send(303);
-Guía ESP32: Blink, Pulsador y LED por WiFi
+servidor.send(303); // redirección HTTP
 }
 // Ruta "/": muestra la página
 void paginaPrincipal() {
@@ -293,9 +286,14 @@ servidor.begin();
 void loop() {
 servidor.handleClient(); // Atender pedidos del navegador. Sin delay().
 }
+``` 
 
 Glosario 
 -
 HTTP : HTTP significa Protocolo de transferencia de hipertexto y es la forma en que diferentes partes de Internet se comunican entre sí. HTTP es lo que se conoce como un lenguaje de "solicitud-respuesta" porque el explorador web (Firefox, Safari, etc.).
+
+bool: tipo de dato booleano, es un valor lógico que solo puede tener dos estados: verdadero (true) o falso (false).
+
+HTML: (Lenguaje de Marcado de Hipertexto) es el código estándar que se usa para estructurar y dar contenido a las páginas web.
 
 
