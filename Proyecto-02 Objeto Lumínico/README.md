@@ -1,4 +1,4 @@
-Para el proyecto 02 se nos dio el desafío de crear un objeto lumínico que respondiera a un concepto. (Etrega 24/09)
+Para el proyecto 02 se nos dio el desafío de crear un objeto lumínico que respondiera a un concepto.
 -
 Mi compañera Javiera y yo decidimos enfocarnos en la bioluminiscencia. esta idea principal nos dio el indicio de explorar organismos que poseen estas características y terminamos en el reino fungi durante extensa divagación, correcciones y prototipado. 
 
