@@ -1,4 +1,4 @@
-Apuntes de clase online (algo extraños, no lo se quizás tenia sueño cuanod escribi algunos d¿ o la c ase de verdad estaba rara).
+Apuntes de clase online (algo extraños, no lo se quizás tenia sueño cuando escribí o la clase de verdad estaba rara).
 -
 el porqué antes del cómo 
 el cono de futuros y el manifiesto A/B  
