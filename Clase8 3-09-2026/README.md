@@ -1,7 +1,7 @@
 Charla con invitado: Emilio Troncoso 
 -
 
-Notas:
+Notas:(transcripción pequeña de notas físicas) 
   * visión del futuro comunicativo
   * la pandemia como catalizador del proyecto, contacto físico limitado (aislamiento)
   * la búsqueda de recuperara la cercanía (continuidad comunicativa)
