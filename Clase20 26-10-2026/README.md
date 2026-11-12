@@ -17,3 +17,6 @@ A la proxima intentare no tener DOS FUNERALES repentinos en una semana supongo.
 <img width="1558" height="1032" alt="WhatsApp Image 2026-10-30 at 01 30 29" src="https://github.com/user-attachments/assets/eeb5c077-b4be-4827-b805-3bc2e67e392a" />
 
 * ya me calmé. lo juro. 😠
+
+<img width="1600" height="900" alt="2edce7e6-2706-4320-95a8-67875a04fd11" src="https://github.com/user-attachments/assets/0ee3e42c-283d-453e-ac97-f1675599faf6" />
+ *pizarra de ensalada conceptual nuevamente⭐
