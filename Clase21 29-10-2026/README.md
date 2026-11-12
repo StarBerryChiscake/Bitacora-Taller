@@ -23,4 +23,11 @@ y terminamos respondiendo una preguntas de profundización para nuestro Examen.
 
 <img width="1600" height="1158" alt="WhatsApp Image 2026-10-30 at 01 30 30 (2)" src="https://github.com/user-attachments/assets/3aa5b312-b3fb-49e2-be16-8c623deec5df" />
 
+<img width="1600" height="900" alt="2edce7e6-2706-4320-95a8-67875a04fd11" src="https://github.com/user-attachments/assets/15db3dac-cd74-4f76-be2d-bb7402f8ea43" />
+ * ⭐foto de la ensalada conceptual de la profe⭐
+
+
+
+
 Seguimos iterando lo que se desarrollará para el Examen como grupo aun debemos concretar nuestro prototipo. 🙂
+-
